@@ -8,6 +8,13 @@ body {
 
   align-self: stretch;
 }
+.container {
+  display: flex;
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .logo {
   flex-shrink: 0;
@@ -18,6 +25,10 @@ body {
   letter-spacing: 0.03375rem;
   color: #4d5ae5;
   text-transform: uppercase;
+  border-bottom: 1px solid #e7e9fc;
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
 }
 .logo-blace {
   font-family: "Raleway", sans-serif;
@@ -40,7 +51,10 @@ body {
 .address-contacts {
   font-style: normal;
 }
-
+.menu-nav {
+  display: flex;
+  gap: 40px;
+}
 .link {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 1rem;
@@ -48,11 +62,17 @@ body {
   line-height: 1.5rem;
   letter-spacing: 0.02rem;
 }
+li .link {
+  margin-right: 0;
+}
 .link:hover,
 .link:focus {
   color: #404bbf;
 }
-
+.address-contacts {
+  display: flex;
+  gap: 40px;
+}
 .contacts-link {
   color: var(--SLATE, #434455);
   font-size: 1rem;
@@ -60,9 +80,13 @@ body {
   line-height: 1.5rem;
   letter-spacing: 0.02em;
 }
+li .contacts-link {
+  margin-right: 0;
+}
 .contact-line {
   flex-shrink: 0;
-
+  padding-top: 24px;
+  padding-bottom: 24px;
   background: var(--WHITE, #fff);
 }
 .contacts-link:hover,
@@ -74,6 +98,7 @@ body {
 }
 
 .hero {
+  padding: 188px 0 188px;
   flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
 }
@@ -85,6 +110,7 @@ body {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.07rem;
+  max-width: 496px;
 }
 
 .button-text {
@@ -96,6 +122,11 @@ body {
   letter-spacing: 0.04rem;
 }
 button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 
   background: var(--IRIS, #4d5ae5);
@@ -104,8 +135,16 @@ button {
 .button-text:focus {
   background-color: #404bbf;
 }
-
+.sector-character {
+  display: flex;
+  gap: 24px;
+  padding: 120px 0 120px;
+}
+li .character-list {
+  margin-right: 0;
+}
 .character-list {
+  width: calc((100% - 72px) / 4);
   flex-shrink: 0;
   letter-spacing: 0.02em;
 }
@@ -115,6 +154,7 @@ button {
   font-weight: 500;
   line-height: 1.5rem;
   letter-spacing: 0.025rem;
+  margin-bottom: 8px;
 }
 .character-text {
   color: var(--SLATE, #434455);
@@ -123,6 +163,7 @@ button {
   letter-spacing: 0.02rem;
 }
 .sector-photo {
+  padding: 120px 0 120px;
   background: #f4f4fd;
 }
 .name-photo-gallery {
@@ -133,20 +174,32 @@ button {
   line-height: 1.11;
   letter-spacing: 0.045rem;
   text-transform: capitalize;
+  margin-bottom: 72px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .content-list {
+  display: flex;
+  gap: 24px;
   justify-content: center;
-
   letter-spacing: 0.02em;
 }
+li .card-content {
+  margin-right: 0;
+}
+
 .team-card {
   justify-content: center;
 }
 .card-content {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   justify-content: center;
-
   background-color: #ffffff;
+}
+.contener-personal {
+  padding: 32px 0 32px;
 }
 .card-personal {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -160,27 +213,43 @@ button {
   letter-spacing: 0.02em;
   font-size: 1rem;
   line-height: 1.5rem;
+  text-align: center;
 }
 
 .portfolio {
+  padding: 120px 0 120px 0)
   background: #fff;
 }
 .rowy {
   flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .project-card {
   letter-spacing: 0.02em;
-
+  margin-bottom: 48px;
   background-color: #ffffff;
-
+  width: calc((100% - 48px) / 3);
   flex-shrink: 0;
+}
+li .project-card {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.container-gallery {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .my-gallery {
   background: var(--WHITE, #fff);
   flex-shrink: 0;
 }
 .gallery-name {
+  margin-bottom: 8px;
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 1.25rem;
   font-weight: 500;
@@ -197,6 +266,8 @@ button {
 .content-footer {
   flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
+  padding: 100px 0 100px;
+  display: inline-block;
 }
 
 .footer-text {
@@ -205,6 +276,8 @@ button {
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  max-width: 264px;
 }
 
 .logo-white {
