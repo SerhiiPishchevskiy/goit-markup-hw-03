@@ -188,7 +188,9 @@ li .character-list {
 li .card-content {
   margin-right: 0;
 }
-
+img {
+  display: block;
+}
 .team-card {
   justify-content: center;
 }
