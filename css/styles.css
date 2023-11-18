@@ -14,7 +14,6 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: ;
 }
 
 .logo {
@@ -28,7 +27,6 @@ body {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  margin-right: 76px;
 }
 .logo-blace {
   font-family: "Raleway", sans-serif;
@@ -41,6 +39,7 @@ body {
 }
 .logo-blue {
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo .logo-blace:hover,
@@ -69,7 +68,6 @@ body {
 }
 .address-contacts {
   font-style: normal;
-
   gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -94,8 +92,11 @@ body {
   color: #404bbf;
 }
 .top-line {
-  border-bottom: 1px solid #e7e9fc;
+  width: 90rem;
+  height: 4.5rem;
+
   flex-shrink: 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .hero {
