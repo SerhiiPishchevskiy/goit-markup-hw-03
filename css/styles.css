@@ -11,6 +11,14 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 .container {
   display: flex;
   width: 1158px;
@@ -30,6 +38,7 @@ body {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 .logo-blace {
   font-family: "Raleway", sans-serif;
@@ -53,7 +62,6 @@ body {
   display: flex;
   gap: 40px;
   margin-right: 76px;
-  padding: 24px 0;
 }
 .link {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -71,6 +79,7 @@ body {
 .address-contacts {
   font-style: normal;
   gap: 40px;
+  padding: 24px 0;
 }
 .contacts-link {
   color: var(--SLATE, #434455);
@@ -146,10 +155,10 @@ button {
 .sector-character {
   display: flex;
   gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
 
 .character-list {
-  flex-basis: calc((100% - 72px) / 4);
   flex-shrink: 0;
   letter-spacing: 0.02em;
   margin-right: 24px 24px 24px 0;
@@ -184,20 +193,16 @@ h3 {
   letter-spacing: 0.045rem;
   text-transform: capitalize;
   margin-bottom: 8px;
-
-  margin-bottom: 72px;
 }
-
 .content-list {
   display: flex;
   gap: 24px;
   justify-content: center;
   letter-spacing: 0.02em;
   width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
-li .card-content {
-  margin-right: 0;
-}
+
 img {
   display: block;
 }
@@ -205,12 +210,14 @@ img {
   justify-content: center;
 }
 .card-content {
-  border-radius: 0px 0px 4px 4px;
   justify-content: center;
   background-color: #ffffff;
+  margin-right: 24px 24px 24px 0;
 }
 .contener-personal {
-  padding: 32px 0 32px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .card-personal {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -244,6 +251,7 @@ h2 {
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 .rowy {
   flex-shrink: 0;
@@ -253,11 +261,12 @@ h2 {
   row-gap: 48px;
   margin-right: 24px 24px 24px 0 0 0;
   margin-bottom: 48px 48px 48px 0 0 0;
+  width: calc((100% - 48px) / 3);
 }
 
 .project-card {
   letter-spacing: 0.02em;
-  width: calc((100% - 48px) / 3);
+
   background-color: #ffffff;
 
   flex-shrink: 0;
@@ -291,6 +300,8 @@ h2 {
   flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
   padding: 100px 0 100px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-text {
   color: var(--CLOUD, #f4f4fd);
@@ -298,9 +309,8 @@ h2 {
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+
   max-width: 264px;
-  display: inline-block;
 }
 
 .logo-white {
