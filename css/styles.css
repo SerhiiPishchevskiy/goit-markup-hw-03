@@ -6,6 +6,8 @@ body {
   background: #fff;
   color: #434455;
   align-self: stretch;
+  width: 1440px;
+  height: 3300px;
 }
 .section {
   padding-top: 120px;
@@ -19,6 +21,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+.link,
+.contacts-link {
+  text-decoration: none;
+}
 .container {
   display: flex;
   width: 1158px;
@@ -28,8 +34,7 @@ ul {
 }
 
 .logo {
-  flex-shrink: 0;
-  line-height: 1.17;
+  height: 72px;
   font-family: "Raleway", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
@@ -38,15 +43,10 @@ ul {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding: 24px 0;
+  flex-shrink: 0;
+  line-height: 1.17;
 }
 .logo-blace {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03375rem;
-  text-transform: uppercase;
   color: #2e2f42;
 }
 .logo-blue {
@@ -60,8 +60,10 @@ ul {
 }
 .menu-nav {
   display: flex;
+  padding: 24px 0;
   gap: 40px;
   margin-right: 76px;
+  list-style: none;
 }
 .link {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -79,7 +81,6 @@ ul {
 .address-contacts {
   font-style: normal;
   gap: 40px;
-  padding: 24px 0;
 }
 .contacts-link {
   color: var(--SLATE, #434455);
@@ -101,25 +102,25 @@ ul {
 }
 
 .hero {
+  width: 1440px;
+  height: 600px;
   flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
   padding: 188px 0;
 }
-h1 {
-  max-width: 496px;
-  text-align: center;
-}
+
 .hero-content {
   color: var(--WHITE, #fff);
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.07rem;
+  text-align: center;
+  max-width: 496px;
 }
 
 .button-text {
   color: var(--WHITE, #fff);
-  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
@@ -129,10 +130,11 @@ button {
   display: block;
   min-width: 169px;
   height: 56px;
+  gap: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background: var(--IRIS, #4d5ae5);
 }
 .button-text:hover,
@@ -155,18 +157,26 @@ button {
 .sector-character {
   display: flex;
   gap: 24px;
-  width: calc((100% - 72px) / 4);
+  list-style: none;
+  width: 1128px;
+  height: 104px;
 }
 
+.character {
+  flex-shrink: 0;
+}
 .character-list {
   flex-shrink: 0;
   letter-spacing: 0.02em;
   margin-right: 24px 24px 24px 0;
+
+  width: calc((100% - 72px) / 4);
 }
 h3 {
   margin-bottom: 8px;
 }
 .character-traits {
+  width: 264px;
   color: #2e2f42;
   font-size: 1.25rem;
   font-weight: 500;
@@ -174,15 +184,18 @@ h3 {
   letter-spacing: 0.025rem;
 }
 .character-text {
+  width: 264px;
   color: var(--SLATE, #434455);
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.02rem;
 }
 .photo {
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
   padding: 120px 0 120px;
   background: #f4f4fd;
-  margin-bottom: 72px;
 }
 .name-photo-gallery {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -192,15 +205,20 @@ h3 {
   line-height: 1.11;
   letter-spacing: 0.045rem;
   text-transform: capitalize;
-  margin-bottom: 8px;
+  margin-bottom: 72px;
+  width: 162px;
+  height: 40px;
 }
 .content-list {
   display: flex;
   gap: 24px;
   justify-content: center;
   letter-spacing: 0.02em;
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  list-style: none;
 }
 
 img {
@@ -213,9 +231,10 @@ img {
   justify-content: center;
   background-color: #ffffff;
   margin-right: 24px 24px 24px 0;
+  width: calc((100% - 72px) / 4);
 }
 .contener-personal {
-  padding: 32px 16px;
+  padding: 32px 0;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -240,9 +259,7 @@ img {
   padding: 120px 0 120px 0;
   background: #fff;
 }
-h2 {
-  margin-bottom: 72px;
-}
+
 .name-gallery {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -251,7 +268,7 @@ h2 {
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  margin-bottom: 8px;
+  margin-bottom: 72px;
 }
 .rowy {
   flex-shrink: 0;
@@ -261,18 +278,20 @@ h2 {
   row-gap: 48px;
   margin-right: 24px 24px 24px 0 0 0;
   margin-bottom: 48px 48px 48px 0 0 0;
-  width: calc((100% - 48px) / 3);
+
+  list-style: none;
 }
 
 .project-card {
   letter-spacing: 0.02em;
 
   background-color: #ffffff;
-
-  flex-shrink: 0;
 }
 
 .container-gallery {
+  width: calc((100% - 48px) / 3);
+  width: 360px;
+  height: 420px;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
