@@ -70,7 +70,6 @@ ul {
 .menu-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 .link {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -78,6 +77,7 @@ ul {
   font-weight: 500;
   line-height: 1.5rem;
   letter-spacing: 0.02rem;
+  padding: 24px 0;
 }
 
 .link:hover,
@@ -87,6 +87,7 @@ ul {
 .address-contacts {
   display: flex;
   font-style: normal;
+  gap: 40px;
 }
 .contacts-link {
   color: var(--SLATE, #434455);
@@ -94,14 +95,11 @@ ul {
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0.02em;
+  margin-right: 40px;
 }
 .contacts-list {
   display: flex;
   padding: 24px 0;
-}
-
-.contact-item {
-  margin-right: 40px;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -166,8 +164,6 @@ button {
 /* секція 2 */
 
 .section-character {
-  margin-inline-start: 120px;
-  width: calc((100% - 72px) / 4);
   flex-shrink: 0;
 }
 .sector-character {
@@ -182,6 +178,7 @@ button {
   flex-shrink: 0;
   letter-spacing: 0.02em;
   margin-right: 24px;
+  width: calc((100% - 72px) / 4);
 }
 
 .character-traits {
@@ -308,7 +305,7 @@ p {
   flex-shrink: 0;
 }
 
-.gallery {
+.container-gallery {
   padding: 32px 16px;
   margin-bottom: 8px;
   border-top: none;
