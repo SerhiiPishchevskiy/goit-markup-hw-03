@@ -70,8 +70,6 @@ ul {
 .menu-list {
   display: flex;
   gap: 40px;
-}
-.menu-item {
   padding: 24px 0;
 }
 .link {
@@ -89,7 +87,6 @@ ul {
 .address-contacts {
   display: flex;
   font-style: normal;
-  gap: 40px;
 }
 .contacts-link {
   color: var(--SLATE, #434455);
@@ -97,7 +94,6 @@ ul {
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0.02em;
-  margin-right: 40px;
 }
 .contacts-list {
   display: flex;
@@ -105,6 +101,7 @@ ul {
 }
 
 .contact-item {
+  margin-right: 40px;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -136,7 +133,7 @@ ul {
 
 .button-text {
   margin: 0 auto;
-  display: flex;
+  display: block;
   align-items: flex-start;
   gap: 10px;
   min-width: 169px;
@@ -169,13 +166,13 @@ button {
 /* секція 2 */
 
 .section-character {
-  padding-top: 120px;
-  padding-bottom: 120px;
   margin-inline-start: 120px;
   width: calc((100% - 72px) / 4);
   flex-shrink: 0;
 }
 .sector-character {
+  padding-top: 120px;
+  padding-bottom: 120px;
   display: flex;
   gap: 24px;
   list-style: none;
@@ -279,7 +276,6 @@ img {
 .section-portfolio {
   display: block;
   margin: 0 auto;
-
   width: 1128px;
   height: 1000px;
   flex-shrink: 0;
@@ -312,17 +308,17 @@ p {
   flex-shrink: 0;
 }
 
-.container-gallery {
+.gallery {
   padding: 32px 16px;
   margin-bottom: 8px;
   border-top: none;
   border: 1px solid #e7e9fc;
+  margin-bottom: 48px;
 }
 
 .project-card {
   width: calc((100% - 48px) / 3);
   margin-right: 24px;
-  margin-bottom: 48px;
 }
 
 .my-gallery {
