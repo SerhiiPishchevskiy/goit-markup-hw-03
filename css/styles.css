@@ -95,7 +95,6 @@ ul {
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0.02em;
-  margin-right: 40px;
 }
 li:last-child {
   margin-right: 0;
@@ -103,6 +102,7 @@ li:last-child {
 .contacts-list {
   display: flex;
   padding: 24px 0;
+  gap: 40px;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -166,10 +166,8 @@ button {
 }
 /* секція 2 */
 
-.section-character {
-  flex-shrink: 0;
-  padding-top: 120px;
-  padding-bottom: 120px;
+.character {
+  padding: 120px 0;
 }
 .sector-character {
   display: flex;
@@ -203,14 +201,10 @@ button {
 
 /* секція 3 */
 
-.section-photo {
-  width: 1440px;
-  height: 732px;
+.photo {
   display: flex;
   flex-shrink: 0;
   background: var(--CLOUD, #f4f4fd);
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .name-photo {
   margin-bottom: 72px;
@@ -273,12 +267,10 @@ img {
 }
 /* секція 4 */
 
-.section-portfolio {
+.portfolio {
   display: block;
-
-  padding: 120px 0 120px 0;
   flex-shrink: 0;
-  width: 1128px;
+
   height: 1000px;
   background: #fff;
   margin: 0 auto;
@@ -301,7 +293,7 @@ p {
 
   margin-bottom: 48px;
   display: flex;
-  width: 1128px;
+
   height: 420px;
   letter-spacing: 0.02em;
   padding-bottom: 0px;
@@ -342,6 +334,8 @@ p {
   letter-spacing: 0.025rem;
   margin-bottom: 8px;
   padding-top: 32px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .gallery-text {
   color: var(--SLATE, #434455);
@@ -349,6 +343,8 @@ p {
   line-height: 1.5rem;
   letter-spacing: 0.02em;
   padding-bottom: 32px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 main {
   width: 1440px;
