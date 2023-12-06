@@ -202,14 +202,12 @@ button {
 }
 
 /* секція 3 */
-.section {
-  padding: 120px 0;
-}
 
 .photo {
   display: flex;
   flex-shrink: 0;
   background: var(--CLOUD, #f4f4fd);
+  padding: 120px 0;
 }
 .name-photo {
   margin-bottom: 72px;
@@ -273,7 +271,7 @@ img {
 
 .portfolio {
   display: block;
-
+  padding: 120px 0;
   flex-shrink: 0;
   background: #fff;
 }
