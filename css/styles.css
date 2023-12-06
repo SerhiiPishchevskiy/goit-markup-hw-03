@@ -12,15 +12,21 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 a {
   text-decoration: none;
 }
-
+p {
+  margin: 0;
+}
 ul {
   list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 /* хедер */
 .header-line {
@@ -33,10 +39,6 @@ ul {
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
 }
-.header-container {
-  display: flex;
-}
-
 .navigation {
   display: flex;
   align-items: center;
@@ -222,7 +224,6 @@ button {
   justify-content: center;
   align-items: center;
   gap: 32px;
-  list-style: none;
   margin: 0 auto;
   width: calc((100% - 72px) / 4);
 }
@@ -269,11 +270,9 @@ img {
 
 .portfolio {
   display: block;
-  flex-shrink: 0;
 
-  height: 1000px;
+  flex-shrink: 0;
   background: #fff;
-  margin: 0 auto;
 }
 .name-portfolio {
   margin-bottom: 72px;
@@ -285,40 +284,27 @@ img {
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
-p {
-  margin: 0;
-}
+
 .rowy {
-  align-items: flex-start;
-
-  margin-bottom: 48px;
-  display: flex;
-
-  height: 420px;
-  letter-spacing: 0.02em;
-  padding-bottom: 0px;
-
   gap: 32px;
   flex-shrink: 0;
 }
-
-.container-gallery {
-  padding: 32px 16px;
-  margin-bottom: 8px;
-  border-top: none;
-  border: 1px solid #e7e9fc;
-  margin-bottom: 48px;
-}
-
 .project-card {
-  align-items: flex-start;
-
+  flex-basis: auto;
+}
+.rowy,
+.project-card {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
   width: calc((100% - 48px) / 3);
-  margin-right: 24px;
+}
+.container-gallery {
+  padding: 32px 16px;
+  margin-bottom: 8px;
+  border-top: none;
+  border: 1px solid #e7e9fc;
 }
 
 .my-gallery {
@@ -333,24 +319,17 @@ p {
   line-height: 1.5rem;
   letter-spacing: 0.025rem;
   margin-bottom: 8px;
-  padding-top: 32px;
-  column-gap: 24px;
-  row-gap: 48px;
 }
 .gallery-text {
   color: var(--SLATE, #434455);
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
-  column-gap: 24px;
-  row-gap: 48px;
 }
 main {
   width: 1440px;
   height: 3300px;
 }
-
 .content-footer {
   background: var(--NAVY-BLUE, #2e2f42);
   width: 1440px;
