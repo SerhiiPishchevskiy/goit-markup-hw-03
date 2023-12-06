@@ -6,6 +6,11 @@ body {
   background: #fff;
   color: #434455;
 }
+h1,
+h2,
+h3 {
+  margin: 0 auto;
+}
 .container {
   max-width: 1158px;
   margin: 0 auto;
@@ -130,6 +135,7 @@ li:last-child {
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 1.12px;
+  padding-bottom: 48px;
 }
 
 .button-text {
@@ -286,7 +292,6 @@ img {
 }
 
 .rowy {
-  padding: 32px 16px;
   gap: 32px;
 }
 .project-card {
@@ -296,13 +301,17 @@ img {
 .project-card {
   display: flex;
   column-gap: 24px;
-  margin-bottom: 8px;
+  padding: auto;
+  margin: auto;
   flex-wrap: wrap;
   row-gap: 48px;
 }
 .container-gallery {
+  padding: 32px 16px;
+
   border-top: none;
   border: 1px solid #e7e9fc;
+  margin-bottom: 8px;
 }
 
 .my-gallery {
@@ -316,14 +325,14 @@ img {
   font-weight: 500;
   line-height: 1.5rem;
   letter-spacing: 0.025rem;
-  margin-bottom: 8px;
+  margin-top: 32px;
+  margin-bottom: 0;
 }
 .gallery-text {
   color: var(--SLATE, #434455);
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 .gallery-name,
 .gallery-text {
