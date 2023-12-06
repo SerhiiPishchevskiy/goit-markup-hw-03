@@ -118,8 +118,6 @@ li:last-child {
   height: 600px;
   flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
-}
-.section {
   padding-top: 188px;
   padding-bottom: 188px;
 }
